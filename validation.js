@@ -42,7 +42,11 @@ form.addEventListener('submit', (e) => {
     error.innerText = "e";
     section_text.style.display = 'none';
     section_input.style.display = 'none';
-    section_sub.style.paddingTop = '10.6vh';
+    if (window.innerWidth <= 600){
+      section_sub.style.paddingTop = '4.6vh';
+    }else{
+      section_sub.style.paddingTop = '10.6vh';
+    }
     success.style.display = 'initial';
   }
 });

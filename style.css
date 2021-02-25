@@ -98,6 +98,7 @@ main{
   width: 165%;
   height: 70px;
   left: -10%;
+  top: 0%;
   position: absolute;
 }
 .sub-section-input #check-email:focus{
@@ -111,7 +112,7 @@ main{
   color: #6A707B;
   padding-left: 2.2vw;
 }
-.sub-section-input img{
+.sub-section-input #img-submit{
   position: absolute;
   width: 25px;
   top: 14%;
@@ -155,5 +156,32 @@ hr{
 #error-message{
   visibility: hidden;
   font-weight: bold;
+  font-family: Arial;
   color: red;
+}
+#img-submit:focus{
+  outline: none;
+}
+#section-success{
+  display: none;
+}
+#section-success img{
+  padding-bottom: 3vh;
+}
+.sub-section-text2 h1{
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2em;
+  color: #131821;
+  padding-bottom: 2.5vh;
+}
+.sub-section-text2 p{
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  width:95%;
+  line-height: 2.8vh;
+  padding-bottom: 5vh;
+  color: #6A707B;
 }

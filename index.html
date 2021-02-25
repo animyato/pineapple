@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validation.js"></script>
     <title>pineapple.</title>
   </head>
   <style>
@@ -116,12 +118,15 @@
         color: #6A707B;
         padding-left: 3vw;
       }
-      .sub-section-input img{
+      .sub-section-input #img-submit{
         position: absolute;
         width: 25px;
         top: 16%;
         right: 5%;
         height: auto;
+      }
+      #img-submit:focus{
+        outline: none;
       }
       .terms{
         padding-top: 0vh;
@@ -174,20 +179,29 @@
             </ul>
           </div>
         </div>
-        <div class="section-subscribe">
-          <div class="sub-section-text">
+        <div class="section-subscribe" id="section-subscribe">
+          <div class="sub-section-text"  id="sub-section-text">
             <h1>Subscribe to newsletter</h1>
             <p>Subscribe to our newsletter and get 10% discount on pineapple glasses</p>
           </div>
-          <div class="sub-section-input">
+          <div class="sub-section-input" id="sub-section-input">
             <input class="empty-space" type="text" name="" value="">
-            <input id="check-email" type="text" name="" placeholder="Type your email address here...">
-            <img src="img/ic_arrow.png" alt="">
+            <form id="form" action="#" method="GET">
+              <input id="check-email" type="text" name="check-email" placeholder="Type your email address here...">
+              <input id="img-submit" type="image" src="img/ic_arrow.png" alt="Submit">
+            </form>
             <p id="error-message">Error Message</p>
             <div class="terms">
-              <input type="checkbox" name="" value="">
+              <input id="checkboxx" type="checkbox" name="" value="">
               <p>I agree to&nbsp;</p>
               <a href="#">terms of service</a>
+            </div>
+          </div>
+          <div id="section-success">
+            <img src="img/prize.png" alt="">
+            <div class="sub-section-text2">
+              <h1>Thanks for subscribing!</h1>
+              <p>You have successfully subscribed to our email listing.<br>Check your email for the discount code.</p>
             </div>
           </div>
           <hr>
